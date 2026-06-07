@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSA Levelwise Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">DS</div>
+          <div>
+            <p>Levelwise</p>
+            <span>DSA diagnosis lab</span>
+          </div>
+        </div>
+
+        <nav class="nav-list" aria-label="Workspace sections">
+          <button class="nav-item active" data-view="solve">Solve Lab</button>
+          <button class="nav-item" data-view="diagnosis">Diagnosis</button>
+          <button class="nav-item" data-view="practice">Practice Path</button>
+          <button class="nav-item" data-view="profile">Level Report</button>
+        </nav>
+
+        <div class="level-card">
+          <span>Current level</span>
+          <strong id="overallLevel">Logic Builder</strong>
+          <div class="level-meter">
+            <span style="width: 58%"></span>
+          </div>
+          <p id="overallNote">Your tracker is watching understanding, syntax, logic, and edge cases separately.</p>
+        </div>
+      </aside>
+
+      <main>
+        <section class="topbar">
+          <div>
+            <p class="eyebrow">Problem intelligence platform</p>
+            <h1>Find the exact point where DSA breaks.</h1>
+          </div>
+          <div class="session-stats">
+            <div>
+              <span id="timer">00:00</span>
+              <p>active time</p>
+            </div>
+            <div>
+              <span id="typingState">Idle</span>
+              <p>typing signal</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="workspace-grid">
+          <article class="panel problem-panel" data-panel="solve">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">Question</p>
+                <h2>Longest Subarray With Sum K</h2>
+              </div>
+              <span class="difficulty">Medium</span>
+            </div>
+            <p class="problem-text">
+              Given an array of integers and a target value k, return the length of the longest subarray whose sum is exactly k.
+            </p>
+            <div class="problem-meta">
+              <span>Arrays</span>
+              <span>Prefix Sum</span>
+              <span>Hash Map</span>
+            </div>
+            <div class="question-actions">
+              <button id="startBtn" class="primary-btn">Open Question</button>
+              <button id="resetBtn" class="ghost-btn">Reset Session</button>
+            </div>
+          </article>
+
+          <article class="panel editor-panel" data-panel="solve">
+            <div class="panel-head compact">
+              <div>
+                <p class="eyebrow">Code editor signal</p>
+                <h2>Write your attempt</h2>
+              </div>
+              <select id="errorType" aria-label="Select observed error type">
+                <option value="none">No error yet</option>
+                <option value="syntax">Syntax error</option>
+                <option value="compile">Compile-time error</option>
+                <option value="runtime">Runtime error</option>
+                <option value="logic">Wrong answer</option>
+              </select>
+            </div>
+            <textarea id="codeInput" spellcheck="false" placeholder="Start coding here..."></textarea>
+            <div class="editor-actions">
+              <button id="analyzeBtn" class="primary-btn">Analyze Attempt</button>
+              <button id="simulateBtn" class="ghost-btn">Simulate Runtime Error</button>
+            </div>
+          </article>
+
+          <article class="panel insight-panel wide" data-panel="diagnosis">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">Live diagnosis</p>
+                <h2 id="diagnosisTitle">Waiting for solving signals</h2>
+              </div>
+              <span id="riskBadge" class="risk-badge">Tracking</span>
+            </div>
+            <div id="diagnosisBody" class="diagnosis-body">
+              Open the question and write an attempt. If no code appears in the first 4 minutes, this platform marks the block as question understanding.
+            </div>
+            <div class="signal-grid">
+              <div>
+                <span>Understanding</span>
+                <strong id="understandingScore">--</strong>
+              </div>
+              <div>
+                <span>Syntax</span>
+                <strong id="syntaxScore">--</strong>
+              </div>
+              <div>
+                <span>Logic</span>
+                <strong id="logicScore">--</strong>
+              </div>
+              <div>
+                <span>Edge cases</span>
+                <strong id="edgeScore">--</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel cheat-panel" data-panel="diagnosis">
+            <div class="panel-head compact">
+              <div>
+                <p class="eyebrow">Cheat sheet</p>
+                <h2>What to fix now</h2>
+              </div>
+            </div>
+            <ul id="cheatList" class="cheat-list">
+              <li>Understand that subarray means continuous elements.</li>
+              <li>Prefix sum stores running totals.</li>
+              <li>Hash map remembers first index of each prefix sum.</li>
+            </ul>
+          </article>
+
+          <article class="panel wide" data-panel="practice">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">3-stage recovery path</p>
+                <h2>Break hard questions into solvable chunks</h2>
+              </div>
+              <button id="completeChunkBtn" class="ghost-btn">Mark Next Chunk Done</button>
+            </div>
+            <div class="path" id="practicePath">
+              <div class="path-step active">
+                <span>1</span>
+                <div>
+                  <h3>Syntax pattern</h3>
+                  <p>Practice reading input, running a loop, updating a sum, and returning an integer.</p>
+                </div>
+              </div>
+              <div class="path-step">
+                <span>2</span>
+                <div>
+                  <h3>Logic chunks</h3>
+                  <p>Solve prefix sum, lookup difference, and update best answer as three smaller drills.</p>
+                </div>
+              </div>
+              <div class="path-step">
+                <span>3</span>
+                <div>
+                  <h3>Original retry</h3>
+                  <p>Re-attempt the original question by combining syntax plus every logic chunk.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel level-report" data-panel="profile">
+            <div class="panel-head compact">
+              <div>
+                <p class="eyebrow">Rating</p>
+                <h2>Your DSA level</h2>
+              </div>
+            </div>
+            <div class="rating-orbit">
+              <div>
+                <strong id="ratingValue">58</strong>
+                <span>/100</span>
+              </div>
+            </div>
+            <p id="ratingText">You are currently strongest in basic implementation and need focused practice in translating logic into robust code.</p>
+          </article>
+
+          <article class="panel blockers" data-panel="profile">
+            <div class="panel-head compact">
+              <div>
+                <p class="eyebrow">Root causes</p>
+                <h2>Where you get stuck</h2>
+              </div>
+            </div>
+            <div id="blockerBars" class="blocker-bars">
+              <label>Problem understanding <span><i style="width: 36%"></i></span></label>
+              <label>Syntax <span><i style="width: 42%"></i></span></label>
+              <label>Logic design <span><i style="width: 68%"></i></span></label>
+              <label>Edge cases <span><i style="width: 74%"></i></span></label>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+  </body>
+</html>
