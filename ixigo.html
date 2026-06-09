@@ -1,0 +1,2069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            max-width: 180 0px;
+            /* Restricts width on ultra-wide screens */
+            width: 100%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(9, 200px);
+            grid-template-rows: repeat(6px, 60px);
+
+
+            /* border: 4px solid black; */
+            background-color: #1a3868;
+        }
+
+
+        /* header     all 3 divs css */
+        .header {
+            grid-column: 2/10;
+            grid-row: 2/3;
+            display: flex;
+
+
+            /* background-color: chartreuse; */
+            /* justify-content: space-evenly; */
+            align-items: center;
+            gap: 190px;
+        }
+
+        .header_text {
+            height: 36px;
+            width: 740px;
+            font-family: sans-serif;
+            color: white;
+            font-weight: 400;
+            font-size: 32px;
+        }
+
+        .img {
+            height: 135px;
+            width: 174px;
+            background-image: url("ixigo_img.png");
+            background-size: cover;
+        }
+
+
+
+
+        /*  header ke  niche     1 patli div  with  contain  bg-size*/
+        .zig-zaged {
+
+            height: 10px;
+            width: 1700px;
+            background-image: url("zig-zaged.png");
+            background-size: contain;
+            gap: 2px;
+            margin-bottom: 2px;
+        }
+
+
+
+
+
+
+
+        /* main-container  css   main div ke andar  2  div   img,*/
+
+        .main-container {
+            display: flex;
+            height: 80px;
+            width: 1700px;
+            border: 4px solid cadetblue;
+            padding: 0 30px;
+        }
+
+        .inside {
+            display: flex;
+
+
+            align-items: center;
+            gap: 40%;
+        }
+
+        .one {
+            height: 60px;
+            width: 200px;
+            background-color: chocolate;
+            align-self: center;
+        }
+
+        .two {
+            height: 60px;
+            width: 600px;
+            background-color: rgb(66, 63, 61);
+        }
+
+
+
+
+
+
+        /* <!-- zig-zag ke neeche bala  --> */
+
+
+        .gp {
+            display: flex;
+            height: 70px;
+            width: 1520px;
+            border-bottom: 1px solid black;
+
+            justify-content: space-between;
+
+        }
+
+        .header_p {
+            height: 70px;
+            width: 1500px;
+            display: flex;
+            justify-content: space-between;
+            gap: 58%;
+
+        }
+
+        .logo_img {
+            display: flex;
+            height: 70px;
+            width: 160px;
+            gap: 12%;
+            justify-content: center;
+            align-items: center;
+            margin-left: 27px;
+            /* background-color: aquamarine; */
+        }
+
+        .imgage {
+            height: 44px;
+            width: 92px;
+            border: 1px solid rgb(249, 245, 245);
+            border-radius: 10px;
+            background-image: url("logo.png");
+            background-size: cover;
+        }
+
+
+        .three {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 1px;
+        }
+
+
+
+
+        .three-left {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 2%;
+            font-weight: 300;
+            font-size: large;
+            font-family: sans-serif;
+        }
+
+        .offer_img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-image: url("fourth_img3.png");
+            background-size: cover;
+        }
+
+        .offers {
+
+            height: 60px;
+            width: 60px;
+            padding-top: 6%;
+            font-family: sans-serif;
+            font-weight: lighter;
+            font-size: large;
+        }
+
+        .cus_service_img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-image: url("fourth_img3.png");
+            background-size: cover;
+        }
+
+        .customer-service {
+            height: 60px;
+            width: 200px;
+            padding-top: 6%;
+            font-family: sans-serif;
+            font-weight: lighter;
+            font-size: large;
+            /* border: 1px solid black; */
+        }
+
+        .three-right {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 3%;
+            /* background-color: blue; */
+            font-size: x-large;
+            /* text-align: center; */
+            font-family: sans-serif;
+        }
+
+        .loginimg {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-image: url("zig-zag_login.png");
+            background-size: cover;
+        }
+
+        .login {
+
+            height: 60px;
+            width: 200px;
+            padding-top: 7%;
+            font-family: sans-serif;
+            font-weight: lighter;
+            font-size: large;
+            /* border: 1px solid black; */
+
+        }
+
+
+        .main {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+
+
+
+        }
+
+        .mbody {
+
+            height: 1200px;
+            width: 1300px;
+            display: grid;
+            grid-template-columns: repeat(14, 100px);
+            grid-template-rows: repeat(60, 40px);
+            row-gap: 0.5%;
+
+            background-color: rgba(rgb(122, 122, 124), 0.5);
+            /* border: 14px groove olive; */
+        }
+
+        .Fstbox {
+
+            /* as it is chaild of mbody */
+            grid-column: 1/14;
+            grid-row: 1/7;
+
+
+
+            /* for its child classes */
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: repeat(6, 70px);
+            grid-column: 1/14;
+            grid-row: 1/14;
+
+        }
+
+        .Fstboxhead {
+
+            /* ye  properties of Fstboxhead as a child of Fstbox hai    */
+            grid-column: 1/14;
+            grid-row: 1/2;
+
+            /* background-color: lavenderblush; */
+
+
+
+            /* and  ye   properties  as a parent  class for Fstbox_ulclass   and Fstbox_left  these 2 its imidiate childs   */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30%;
+
+
+
+        }
+
+        /* its imidiate  child classes are      Fstbox_ulclass   and Fstbox_left */
+
+        .Fstbox_ulclass {
+            height: 100%;
+            width: 1195px;
+            /* background-color: cyan; */
+
+
+
+
+            /* as a parent of li_class1 2 3 4 */
+            display: flex;
+
+
+            justify-content: center;
+            align-items: center;
+            gap: 3%;
+        }
+
+
+
+        .li_class1 {
+
+            height: 100%;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+        }
+
+        .li_class2 {
+            height: 100%;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+            /* background-color: seagreen; */
+        }
+
+        .li_class3 {
+            height: 100%;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+            /* background-color: yellow; */
+        }
+
+        .li_class4 {
+            height: 100%;
+            width: 150px;
+            /* background-color: springgreen; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+        }
+
+        .li_img1 {
+
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-image: url("sixboximg3.png");
+            background-size: cover;
+        }
+
+        .li_img2 {
+
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-image: url("sixboximg2.png");
+            background-size: cover;
+        }
+
+        .li_img3 {
+
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-image: url("sixboximg3.png");
+            background-size: cover;
+        }
+
+        .li_img4 {
+
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-image: url("sixboximg1.png");
+            background-size: cover;
+        }
+
+        .li_link {
+            height: 60px;
+            width: 60px;
+            margin-top: 20%;
+            align-items: center;
+        }
+
+        .Fstbox_left {
+
+            /* property  as a child  of  Fstboxhead */
+            height: 100%;
+            width: 50%;
+            /* background-color: red; */
+
+
+
+            /* proprty as a parent  of h1 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .h1_Fstbox_left {
+            font-size: large;
+            font-weight: normal;
+
+
+        }
+
+
+
+
+
+        .Fstboxbody {
+            grid-column: 1/14;
+            grid-row: 2/6;
+
+            /* background-color:#f2f9ff; */
+            border-radius: 20px;
+            box-shadow: grey;
+            box-shadow: 9px 6px 6px 18px #F3F3F3;
+        }
+
+        .Fst_1stbox {
+            grid-column: 1/14;
+            grid-row: 2/3;
+            display: flex;
+            height: 60px;
+            width: 1300px;
+            justify-content: space-between;
+            gap: 30%;
+            align-items: center;
+            /* border: 2px solid black; */
+        }
+
+        .Fst_1stbox_left {
+            height: 60px;
+            width: 300px;
+
+            /* background-color: cyan; */
+
+            display: flex;
+            align-items: center;
+
+
+            gap: 6%;
+        }
+
+        .Fst_1stbox_left1 {
+
+
+            height: 30px;
+            width: 100px;
+            border-radius: 20px;
+            margin-left: 18px;
+            border: 1px solid blue;
+            text-align: center;
+            padding-top: 10px;
+
+            color: blue;
+        }
+
+        #Fstbox_left2 {
+            border: 1px solid black;
+            color: black;
+        }
+
+        .Fst_1stbox_right {
+            display: flex;
+            height: 60px;
+            width: 300px;
+            align-items: center;
+
+            gap: 0.4%;
+        }
+
+        .Fst_1stbox_right1 {
+
+
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-image: url("thumb.png");
+            background-size: cover;
+        }
+
+        .Fst_1stbox_right2 {
+
+
+            height: 40px;
+            width: 130px;
+            /* border: 4px groove black; */
+            text-align: center;
+            padding-top: 20px;
+
+
+        }
+
+        .Fst_2ndbox {
+            grid-column: 1/14;
+            grid-row: 3/4;
+
+            display: flex;
+            height: 60px;
+            width: 1300px;
+            justify-content: center;
+            gap: 0.3%;
+            align-items: center;
+            border-radius: 20px;
+            /* border: 2px solid black; */
+        }
+
+        .Fst_2ndbox_6div_first {
+            height: 100%;
+            width: 218px;
+            /* border: 4px groove yellow; */
+            border-radius: 20px 0px 0px 20px;
+            background-color: #f4f5f5;
+
+            /* padding-left: 32px; */
+            font-weight: bolder;
+            font-size: large;
+            text-align: center;
+
+        }
+
+        .Fst_2ndbox_6div {
+            height: 100%;
+            width: 218px;
+            /* border: 4px groove yellow; */
+            background-color: #f4f5f5;
+
+            padding-left: 2px;
+            font-weight: bolder;
+            font-size: large;
+            text-align: center;
+        }
+
+        .Fst_2ndbox_6div_last {
+            height: 100%;
+            width: 190px;
+            background-color: rgb(252, 121, 13);
+            border-radius: 0px 15px 15px 0px;
+
+            color: white;
+            text-align: center;
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+
+
+        .Fst_3rdbox {
+            grid-column: 1/14;
+            grid-row: 5/6;
+
+            display: flex;
+            height: 70px;
+            width: 1300px;
+            justify-content: start;
+            /* gap: 3%; */
+            align-items: center;
+            border-radius: 20px;
+            /* border: 2px solid black; */
+        }
+
+
+        .Fst_3rdbox_div1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 80%;
+            width: 190px;
+            /* background-color: yellow; */
+        }
+
+        .Fst_3rdbox_div1_specialfairs {
+            height: 80%;
+            width: 230px;
+            font-weight: bolder;
+            font-size: medium;
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 15%;
+        }
+
+        .Fst_3rdbox_div2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* gap: 1%; */
+            height: 80%;
+            width: 400px;
+            /* background-color: rgb(31, 31, 30); */
+        }
+
+        .Fst_3rdbox_div2_students {
+            height: 45%;
+            width: 110px;
+            border-radius: 20px;
+            border: 0.2px solid black;
+            text-align: center;
+            padding-top: 7px;
+            font-weight: lighter;
+        }
+
+
+        .Fst_4thbox {
+            grid-column: 1/14;
+            grid-row: 7/8;
+
+            display: flex;
+            height: 40px;
+            width: 1300px;
+            justify-content: start;
+            /* gap: 3%; */
+            align-items: center;
+            background-color: #f2f9ff;
+
+            background-image: url("FST_box_4thimg.png");
+            background-size: cover;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        /* 2nd box on mbody div */
+
+        .SECbox {
+            grid-column: 1/14;
+            grid-row: 9/14;
+
+
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: repeat(4, 40px);
+
+
+            /* background-color: rgb(125, 10, 125); */
+        }
+
+        .SECboxhead {
+            grid-column: 1/14;
+            grid-row: 1/2;
+            background-color: white;
+            /* border: 4px solid black; */
+            font-weight: bold;
+            font-size: large;
+            font-family: sans-serif;
+            color: black;
+        }
+
+        .SECboxbody {
+            grid-column: 1/14;
+            grid-row: 2/6;
+            border-radius: 12px;
+            /* background-color: thistle; */
+            box-shadow: 9px 6px 6px 18px #F3F3F3;
+        }
+
+        .secstrip {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            /* gap: 20%; */
+        }
+
+        .body {
+            height: 100px;
+            width: 150px;
+            border-right: 0.1px solid grey;
+
+            margin-left: 4%;
+            margin-top: 2%;
+
+
+            /* div as parent  for  2 child of it logo,text */
+
+
+        }
+
+        .logo1 {
+            height: 60px;
+            width: 60px;
+            background-image: url("flight_tracker.png");
+
+            margin-left: 10%;
+        }
+
+        .logo2 {
+            height: 60px;
+            width: 60px;
+            background-image: url("book_visa.png");
+
+            margin-left: 10%;
+        }
+
+        .logo3 {
+            height: 60px;
+            width: 60px;
+            background-image: url("trdbanner4.png");
+
+            margin-left: 10%;
+        }
+
+        .logo4 {
+            height: 60px;
+            width: 60px;
+            background-image: url("plan.png");
+
+            margin-left: 10%;
+        }
+
+        .logo5 {
+            height: 60px;
+            width: 60px;
+            background-image: url("trdbanner4.png");
+
+            margin-left: 10%;
+        }
+
+
+        .text {
+            height: 20px;
+            width: 150px;
+            margin: 11%;
+        }
+
+
+
+
+
+
+
+
+        /* trdbox  css */
+        .trdparent {
+            grid-column: 1/14;
+            grid-row: 15/20;
+
+            /* background-color: aqua; */
+
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: repeat(6, 40px);
+
+        }
+
+
+        .trdheader {
+            grid-column: 1/14;
+            grid-row: 1/2;
+            /* background-color: cadetblue; */
+
+            font-weight: bold;
+            font-size: large;
+            font-family: sans-serif;
+            color: black;
+
+
+
+            display: flex;
+            height: 100%;
+            width: 1311px;
+
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        /* trdheader ki css  */
+        .trdh2right {
+
+            font-weight: 200;
+            color: black;
+            font-size: medium;
+            border: rgb(125, 10, 125);
+        }
+
+
+        .trddivleft {
+            width: 600px;
+            height: 30px;
+            display: flex;
+            /* background-color: blueviolet; */
+
+            justify-content: space-between;
+            align-items: center;
+
+
+        }
+
+        .trdflights {
+            height: 20px;
+            width: 90px;
+
+            border: 1px solid black;
+            border-radius: 20px;
+
+
+            text-align: center;
+            padding-top: 1%;
+
+            font-family: sans-serif;
+            font-size: medium;
+            font-weight: 200;
+        }
+
+
+
+        .trdmain {
+            /*thse prop. as a child       */
+            grid-column: 1/14;
+            grid-row: 2/6;
+            /* background-color:rgb(122, 122, 124); */
+            border-radius: 20px;
+
+            /* as a parent for its  imidiate child divs */
+            display: flex;
+            justify-content: space-between;
+
+            gap: 1.5%;
+
+            /* background-color: black; */
+        }
+
+
+        .trdbox1 {
+            height: 190px;
+            width: 300px;
+            /* border: 4px groove; */
+            border-radius: 20px;
+            text-align: center;
+            background-image: url("trdbanner2.png");
+            background-size: cover;
+        }
+
+
+
+        /* 4th box   css styling  */
+        .fourthbox {
+            grid-column: 1/14;
+            grid-row: 21/26;
+            /* background-color: aqua; */
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: repeat(6, 40px);
+
+        }
+
+        .fourthboxheader {
+            height: 40px;
+            width: 1250px;
+            grid-column: 1/14;
+            grid-row: 1/2;
+            /* background-color: cadetblue; */
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 120%;
+        }
+
+
+        .fourthboxmain {
+            grid-column: 1/14;
+            grid-row: 2/6;
+            /* background-color:rgb(122, 122, 124); */
+            border-radius: 20px;
+
+            /* as a parent for its  imidiate child divs */
+            display: flex;
+            justify-content: space-between;
+
+            gap: 1.5%;
+
+        }
+
+        .fourthimg {
+            height: 130px;
+            width: 370px;
+            border-radius: 12px;
+            /* border: 2px solid black; */
+            /* background-color: chartreuse; */
+            background-image: url("fourthimg1.png");
+
+
+        }
+
+
+        /* 5th box css  */
+        .fifthbox {
+            grid-column: 1/14;
+            grid-row: 27/39;
+            /* border: 3px solid black; */
+            /* background-color: wheat; */
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: repeat(6, 40px);
+            box-shadow: 12px 3px 12px 12px gainsboro;
+        }
+
+
+        .fifthboxheader {
+            grid-column: 1/14;
+            grid-row: 1/3;
+            /* background-color: cadetblue; */
+            font-weight: bold;
+            font-size: large;
+            font-family: sans-serif;
+            color: black;
+
+            display: flex;
+            height: 100%;
+            width: 1311px;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        /* 5thbox header ki css  */
+        .fifthboxh2right {
+
+            font-weight: bold;
+            color: black;
+            font-size: x-large;
+            /* border: rgb(125, 10, 125); */
+        }
+
+
+        .fifthboxdivleft {
+            width: 690px;
+            height: 30px;
+            display: flex;
+            /* background-color:slategray; */
+
+            /* justify-content: space-between; */
+            gap: 1%;
+            align-items: center;
+
+
+        }
+
+        .fifthboxflights {
+            height: 20px;
+            width: 90px;
+
+            border: 1px solid black;
+            border-radius: 20px;
+
+
+            text-align: center;
+            padding-top: 1%;
+
+            font-family: sans-serif;
+            font-size: medium;
+            font-weight: 200;
+        }
+
+
+
+        .fifthboxmain {
+            /*thse prop. as a child       */
+            grid-column: 1/14;
+            grid-row: 3/10;
+            /* background-color:rgb(122, 122, 124); */
+            border-radius: 20px;
+            /* border: 2px groove; */
+
+            /* as a parent for its  imidiate child divs */
+            display: flex;
+            justify-content: space-between;
+
+            gap: 1.5%;
+
+
+        }
+
+
+        .fifthboximgtext {
+            display: flex;
+            height: 400px;
+            width: 330px;
+            /* border: 4px groove; */
+            border-radius: 20px;
+            border: 2px groove;
+            text-align: center;
+
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+        .fifthimg {
+            height: 200px;
+            width: 330px;
+            background-image: url("trdbanner2.png");
+            background-size: cover;
+            border-radius: 20px;
+            background-color: steelblue;
+        }
+
+        .fifthtext {
+            height: 160px;
+            width: 250px;
+
+            margin: 30px;
+            border: 3px solid teal;
+
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+
+        /* av iska aur  baki  hai   p, div ,p ,div   */
+        .text_star {
+            height: 40px;
+            width: 100%;
+            display: flex;
+            background-color: thistle;
+
+            /* justify-content: space-between; */
+            gap: 20px;
+
+        }
+
+        .p {
+
+            background-color: turquoise;
+        }
+
+        .star {
+
+            width: 70px;
+            background-color: tomato;
+        }
+
+
+        .bottom {
+            height: 40px;
+            width: 100%;
+            margin-top: 30px;
+            background-color: yellow;
+        }
+
+
+
+
+
+
+
+        /* sixth box */
+        .sixp {
+            grid-column: 1/14;
+            grid-row: 41/49;
+            /* border: 3px solid black; */
+            /* background-color: wheat; */
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: repeat(6, 40px);
+            box-shadow: 12px 3px 12px 12px gainsboro;
+        }
+
+        .sixheader {
+            grid-column: 1/14;
+            grid-row: 1/2;
+            height: 70px;
+            width: 1200px;
+            /* background-color: aqua; */
+
+
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .sixh2 {
+            margin-left: 24px;
+            font-weight: bold;
+            font-family: serif;
+        }
+
+        .sixbutton {
+            height: 20px;
+            width: 100px;
+            margin: 12px;
+            align-items: center;
+            padding-top: 4px;
+            padding-left: 14px;
+            border-radius: 20px;
+            border: 0.4px solid black;
+
+        }
+
+        .sixmain {
+            display: flex;
+            gap: 2%;
+            justify-content: space-between;
+            margin-left: 24px;
+            grid-column: 1/14;
+            grid-row: 3/9;
+            height: 253px;
+            width: 900px;
+            /* background-color: darkcyan; */
+            border-radius: 20px;
+        }
+
+        .sixbox1 {
+            display: flex;
+
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            height: 230x;
+            width: 270px;
+            border-radius: 20px;
+            /* border:0.2px solid grey; */
+            box-shadow: 0px 1px 1px 0px;
+        }
+
+        .siximg {
+            height: 150px;
+            width: 270px;
+            background-image: url("sixboximg2.png");
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        #siximg1 {
+            background-image: url("sixboximg4.png");
+        }
+
+        #siximg2 {
+            background-image: url("sixboximg2.png");
+        }
+
+        #siximg3 {
+            background-image: url("sixboximg3.png");
+        }
+
+        #siximg4 {
+            background-image: url("sixboximg2.png");
+        }
+
+        .sixtext {
+            display: flex;
+            flex-wrap: wrap;
+            height: 80px;
+            width: 250px;
+            /* border:2px solid cadetblue; */
+        }
+
+        .name_of_place {
+            display: flex;
+            flex-wrap: nowrap;
+
+
+            font-weight: 900;
+
+
+        }
+
+
+
+
+        .book_flight {
+            /*abbajan of   sixleft  and money*/
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            height: 80px;
+            width: 250px;
+            /* border:2px solid black; */
+            /* background-color: cyan; */
+
+        }
+
+        .sixleft {
+            display: flex;
+            flex-wrap: wrap;
+
+            height: 60px;
+            width: 170px;
+            /* border:2px solid black; */
+        }
+
+        .money {
+            height: 40px;
+            width: 160px;
+            font-weight: bolder;
+            /* border:2px solid black; */
+            /* background-color: chartreuse; */
+
+        }
+
+        .six_a_decor {
+            height: 30px;
+            width: 90px;
+            padding-top: 4px;
+            text-align: center;
+            border: 2px solid hsl(18, 97%, 62%);
+            border-radius: 8px;
+            color: hsl(18, 97%, 62%);
+        }
+
+
+
+
+        /* seven box   css */
+        .sevenbox {
+            grid-column: 1/14;
+            grid-row: 50/60;
+            border: 3px solid black;
+
+            display: grid;
+            grid-template-columns: repeat(9, 185px);
+            grid-template-rows: repeat(9, 60px);
+        }
+
+        .sevenheader {
+            grid-column: 1/8;
+            grid-row: 1/2;
+
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        .sevenmain {
+            grid-column: 1/8;
+            grid-row: 2/8;
+
+            display: flex;
+
+            gap: 2%;
+            flex-wrap: wrap;
+        }
+
+
+        .sevenmain_9box_series {
+            height: 90px;
+            width: 300px;
+            border: 0.5px solid black;
+            border-radius: 12px;
+            box-shadow: 0.5px grey;
+
+
+
+
+
+            display: flex;
+            gap: 4%;
+
+        }
+
+        .sevenmain_img {
+            height: 100%;
+            width: 60px;
+
+            background-image: url("sixboximg4.png");
+            background-size: cover;
+            border-radius: 12px 0px 0px 12px;
+        }
+
+        .sevenmain_rightdiv {
+            height: 90%;
+            width: 350px;
+
+        }
+
+        .sevenmain_rightdiv_p {
+            font-size: x-large;
+            font-weight: 200px;
+        }
+
+        .sevenmain_rightdiv_div {
+            display: flex;
+            gap: 3%;
+            height: 100%;
+            width: 300px;
+
+
+        }
+
+        .iskip {
+            height: 100%;
+            width: 10px;
+        }
+
+        .iskidiv {
+            height: 100%;
+            width: 300px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            color: blue;
+            font-weight: 800;
+
+
+
+        }
+
+
+
+
+
+        /* 8 box css */
+        .eight {
+
+            grid-column: 1/14;
+            grid-row: 60/66;
+            /* border: 3px solid black; */
+
+            display: grid;
+            grid-template-columns: repeat(9, 185px);
+            grid-template-rows: repeat(6, 60px);
+        }
+
+        .eightheader {
+            grid-column: 1/8;
+            grid-row: 2/3;
+
+            font-size: x-large;
+            font-weight: bold;
+            /* background-color: cadetblue; */
+        }
+
+        .eightmain {
+            grid-column: 1/8;
+            grid-row: 3/6;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2%;
+            flex-wrap: wrap;
+            border: 2px solid grey;
+            border-radius: 20px;
+
+        }
+
+
+
+
+        .eightmain_div {
+            height: 70%;
+            width: 1200px;
+            /* background-color: darkcyan; */
+
+            display: flex;
+            gap: 5%;
+        }
+
+        .eightmain_div_1 {
+            height: 70%;
+            width: 150px;
+            /* border: 2px solid black; */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .eightimg {
+            height: 60%;
+            width: 90px;
+            background-image: url("trdbanner2.png");
+            background-size: cover;
+
+        }
+
+        .eightp {
+            font-size: x-large;
+        }
+
+
+        /* 9th box  css */
+        .nine {
+            grid-column: 1/14;
+            grid-row: 67/70;
+            /* border: 3px solid black; */
+
+            display: grid;
+            grid-template-columns: repeat(9, 185px);
+            grid-template-rows: repeat(4, 60px);
+        }
+
+        .nine_img {
+            height: 200px;
+            width: 1300px;
+            background-image: url("nine-b0x.png");
+            background-size: cover;
+            border-radius: 12px;
+        }
+
+
+        /* 10th box */
+        .ten {
+            grid-column: 1/14;
+            grid-row: 71/72;
+            /* border: 3px solid black; */
+
+            display: grid;
+            grid-template-columns: repeat(9, 185px);
+            grid-template-rows: repeat(4, 60px);
+        }
+
+        .ten_contain_h2 {
+            height: 100%;
+            grid-column: 1/8;
+            grid-row: 1/2;
+
+
+        }
+
+        .ten_contain_main {
+            height: 60%;
+            grid-column: 1/8;
+            grid-row: 2/4;
+
+            font-size: large;
+            font-weight: 200px;
+
+
+        }
+
+        .ten_contain_p {
+            grid-column: 1/8;
+            grid-row: 4/5;
+            color: blue;
+        }
+
+
+
+        /* last  11ths box */
+        .last {
+            grid-column: 1/14;
+            grid-row: 74/75;
+            /* border: 3px solid black; */
+
+            display: grid;
+            grid-template-columns: repeat(9, 185px);
+            grid-template-rows: repeat(4, 45px);
+            background-color:#fafafa;
+
+        }
+
+        .last_p {
+            height: 30%;
+            grid-column: 1/8;
+            grid-row: 1/2;
+            margin-left: 4%;
+
+        }
+
+        .last_div {
+            height: 100%;
+            grid-column: 1/8;
+            grid-row: 2/4;
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0%;
+
+        }
+
+        .last1 {
+
+            margin-left: 4%;
+            height: 20px;
+            width: 200px;
+            /* border: 2px solid black; */
+        }
+
+
+        .last_divbox{
+             grid-column: 1/14;
+            grid-row: 75/76;
+            /* border: 3px solid black; */
+
+            display: grid;
+            grid-template-columns: repeat(9, 185px);
+            grid-template-rows: repeat(5, 45px);
+            background-color:#e4e4e7;
+
+
+        }
+
+        .last_divbox_img{
+  grid-column: 1/8;
+            grid-row: 1/4;
+            margin-left: 29%;
+
+            height: 200px;
+            width: 500px;
+            background-image: url("ixigo_lastbox.png");
+            background-size: cover;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- header   -->
+    <div class="grid">
+        <div class="header">
+
+            <div class="header_text">Flat 19% Off on Flights & Flat 91% Off on Hotels</div>
+            <div class="img"></div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- zig-zac imaged  div -->
+    <div class="zig-zaged"></div>
+
+
+
+    <!-- zig-zag ke neeche bala  -->
+
+
+    <div class="gp">
+        <div class="header_p">
+            <div class="logo_img">
+                <div class="imgage"> </div>
+            </div>
+            <div class="three">
+                <div class="three-left">
+                    <div class="offer_img"></div>
+                    <h4 class="offers">offers </h4>
+                    <div class="cus_service_img"></div>
+                    <p class="customer-service">customer service</p>
+                </div>
+                <div class="three-right">
+                    <div class="loginimg"></div>
+                    <p class="login">Log in/signup</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="main">
+        <div class="mbody">
+            <!-- 1stbox in mbody div -->
+            <div class="Fstbox">
+                <div class="Fstboxhead">
+                    <div class="Fstbox_ulclass">
+                        <div class="  li_class1">
+                            <div class="li_img1"></div>
+                            <a class="li_link" href="google.com" alt="flight image">Flights</a>
+                        </div>
+                        <div class="li_class2">
+                            <div class="li_img2"></div>
+                            <a class="li_link" href="google.com" alt="flight image"> Hotels</a>
+                        </div>
+                        <div class="li_class3">
+                            <div class="li_img3"></div>
+                            <a class="li_link" href="google.com" alt="flight image">Train</a>
+                        </div>
+                        <div class=" li_class4">
+                            <div class="li_img4"></div>
+                            <a class="li_link" href="google.com" alt="flight image">Buses</a>
+                        </div>
+                    </div>
+                    <div class="Fstbox_left">
+                        <h1 class="h1_Fstbox_left">
+                            Book International and Domestic Flights
+                        </h1>
+                    </div>
+                </div>
+                <div class="Fstboxbody">
+                    <div class="Fst_1stbox">
+                        <div class="Fst_1stbox_left">
+                            <div class="Fst_1stbox_left1" id="Fstbox_left1">One Way</div>
+                            <div class="Fst_1stbox_left1" id="Fstbox_left2">Round Trip</div>
+                        </div>
+                        <div class="Fst_1stbox_right">
+                            <div class="Fst_1stbox_right1"></div>
+                            <div class="Fst_1stbox_right2">Best Flight Offer</div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="Fst_2ndbox">
+                        <div class="Fst_2ndbox_6div_first">From</div>
+                        <div class="Fst_2ndbox_6div">To</div>
+                        <div class="Fst_2ndbox_6div">Departure</div>
+                        <div class="Fst_2ndbox_6div">Return</div>
+                        <div class="Fst_2ndbox_6div">Travelers & class</div>
+                        <div class="Fst_2ndbox_6div_last">Search ></div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="Fst_3rdbox">
+                <div class="Fst_3rdbox_div1">
+                    <div class="Fst_3rdbox_div1_specialfairs">Special Fares</div>
+                    <div class="Fst_3rdbox_div1_optional">(Optional) :</div>
+
+                </div>
+                <div class="Fst_3rdbox_div2">
+                    <div class="Fst_3rdbox_div2_students">Student</div>
+                    <div class="Fst_3rdbox_div2_students">Senior Citizen </div>
+                    <div class="Fst_3rdbox_div2_students"> Armed Forces</div>
+
+                </div>
+
+            </div>
+
+            <div class="Fst_4thbox">
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- 2nd box  in mbody div -->
+            <div class="SECbox">
+                <h2 class="SECboxhead">DO MORE WITH ixigo</h2>
+                <div class="SECboxbody">
+                    <div class="secstrip">
+                        <div class="body">
+                            <div class="logo1"></div>
+                            <p class="text">Flight Tracker</p>
+                        </div>
+                        <div class="body">
+                            <div class="logo2"></div>
+                            <p class="text">Credit Card</p>
+                        </div>
+                        <div class="body">
+                            <div class="logo3"></div>
+                            <p class="text">Book Visa</p>
+                        </div>
+                        <div class="body">
+                            <div class="logo4"></div>
+                            <p class="text">Plan</p>
+                        </div>
+                        <div class="body">
+                            <div class="logo5"></div>
+                            <p class="text">Fare Alerts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- trdbox -->
+
+            <div class="trdparent">
+                <div class="trdheader">
+                    <h2 class="trdh2right">offers For You</h2>
+                    <div class="trddivleft">
+                        <div class="fifthboxflights">Flights</div>
+                        <div class="fifthboxflights">Hotels</div>
+                        <div class="fifthboxflights">Bills</div>
+                        <div class="fifthboxflights">Acc. Num</div>
+                        <div class="trdflights" style="border:none;">View All > </div>
+                    </div>
+                </div>
+                <div class="trdmain">
+                    <div class="trdbox1">
+
+                    </div>
+                    <div class="trdbox1"></div>
+                    <div class="trdbox1"></div>
+                    <div class="trdbox1"></div>
+                    <div class="trdbox1"></div>
+                </div>
+            </div>
+
+
+            <!-- 4th div  main div   h2,div -->
+            <div class="fourthbox">
+                <h2 class="fourthboxheader">Why Book With ixigo?</h2>
+                <div class="fourthboxmain">
+                    <div class="fourthimg"></div>
+                    <div class="fourthimg"></div>
+                    <div class="fourthimg"></div>
+                    <div class="fourthimg"></div>
+                    <div class="fourthimg"></div>
+                    <div class="fourthimg"></div>
+                    <div class="fourthimg"></div>
+
+                </div>
+            </div>
+            <!-- 5th div  main div   h2,div -->
+            <div class="fifthbox">
+                <div class="fifthboxheader">
+                    <h2 class="fifthboxh2right">Best Deals for Hotels</h2>
+                    <div class="fifthboxdivleft">
+                        <div class="trdflights">New Delhi</div>
+                        <div class="trdflights">Mumbai</div>
+                        <div class="trdflights">Bengaluru</div>
+                        <div class="trdflights">Chennai</div>
+                        <div class="trdflights">Chennai</div>
+                        <div class="trdflights">Chennai</div>
+                        <div class="fifthboxflights" style="border:none; color: orangered;">View All > </div>
+                    </div>
+                </div>
+                <div class="fifthboxmain">
+                    <div class="fifthboximgtext">
+                        <div class="fifthimg"></div>
+                        <div class="fifthtext">
+                            <div class="text_star">
+                                <p>Park Inn by Rasission Ne...</p>
+                                <div class="star">img</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="fifthboximgtext">
+                        <div class="fifthimg"></div>
+                        <div class="fifthtext">
+                            <div class="text_star">
+                                <p>Park Inn by Rasission Ne...</p>
+                                <div class="star">img</div>
+                            </div>
+                            <p>PratapGanj</p>
+                            <div class="bottom"></div>
+                        </div>
+                    </div>
+                    <div class="fifthboximgtext">
+                        <div class="fifthimg"></div>
+                        <div class="fifthtext">
+                            <div class="text_star">
+                                <p>Park Inn by Rasission Ne...</p>
+                                <div class="star">img</div>
+                            </div>
+                            <p>PratapGanj</p>
+                            <div class="bottom"></div>
+                        </div>
+                    </div>
+                    <div class="fifthboximgtext">
+                        <div class="fifthimg"></div>
+                        <div class="fifthtext">
+                            <div class="text_star">
+                                <p>Park Inn by Rasission Ne...</p>
+                                <div class="star">img</div>
+                            </div>
+                            <p>PratapGanj</p>
+                            <div class="bottom"></div>
+                        </div>
+                    </div>
+                    <div class="fifthboximgtext">
+                        <div class="fifthimg"></div>
+                        <div class="fifthtext">
+                            <div class="text_star">
+                                <p>Park Inn by Rasission Ne...</p>
+                                <div class="star">img</div>
+
+                            </div>
+                            <p>PratapGanj</p>
+                            <div class="bottom"></div>
+                        </div>
+                    </div>
+                    <div class="fifthboximgtext">
+                        <div class="fifthimg">
+                            <div class="text_star">
+                                <p>Park Inn by Rasission Ne...</p>
+                                <div class="star">img</div>
+                            </div>
+                            <p>PratapGanj</p>
+                            <div class="bottom"></div>
+                        </div>
+                        <div class="fifthtext">
+                            <div class="text_star">
+                                <p>Park Inn by Rasission Ne...</p>
+                                <div class="star">img</div>
+                            </div>
+                            <p>PratapGanj</p>
+                            <div class="bottom"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- 6th div  main div   h2,div -->
+
+            <div class="sixp">
+                <div class="sixheader">
+                    <h2 class="sixh2">Cheapest Fares From</h2>
+                    <div class="sixbutton">New Delhi \/</div>
+                </div>
+
+                <div class="sixmain">
+                    <div class="sixbox1">
+                        <div class="siximg" id="siximg1"></div>
+
+                        <div class="sixtext">
+                            <div class="name_of_place">
+                                <p calss="six_Fname">Amritsar</p>
+                                <p class="six_Lname">,Punjab</p>
+                            </div>
+                            <div class="book_flight">
+                                <div class="sixleft">
+                                    <p>Wed,22 jul</p>
+                                    <div class="money">$ 3,489 onwards
+                                    </div>
+                                </div>
+                                <a class="six_a_decor" href="google.com">Book Flight</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sixbox1">
+                        <div class="siximg" id="siximg2"></div>
+
+                        <div class="sixtext">
+                            <div class="name_of_place">
+                                <p calss="six_Fname">Amritsar</p>
+                                <p class="six_Lname">,Punjab</p>
+                            </div>
+                            <div class="book_flight">
+                                <div class="sixleft">
+                                    <p>Wed,22 jul</p>
+                                    <div class="money">$ 3,489 onwards
+                                    </div>
+                                </div>
+                                <a class="six_a_decor" href="google.com">Book Flight</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sixbox1">
+                        <div class="siximg" id="siximg3"></div>
+
+                        <div class="sixtext">
+                            <div class="name_of_place">
+                                <p calss="six_Fname">Amritsar</p>
+                                <p class="six_Lname">,Punjab</p>
+                            </div>
+                            <div class="book_flight">
+                                <div class="sixleft">
+                                    <p>Wed,22 jul</p>
+                                    <div class="money">$ 3,489 onwards
+                                    </div>
+                                </div>
+                                <a class="six_a_decor" href="google.com">Book Flight</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sixbox1">
+                        <div class="siximg" id="siximg4"></div>
+
+                        <div class="sixtext">
+                            <div class="name_of_place">
+                                <p calss="six_Fname">Amritsar</p>
+                                <p class="six_Lname">,Punjab</p>
+                            </div>
+                            <div class="book_flight">
+                                <div class="sixleft">
+                                    <p>Wed,22 jul</p>
+                                    <div class="money">$ 3,489 onwards
+                                    </div>
+                                </div>
+                                <a class="six_a_decor" href="google.com">Book Flight</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sixbox1">
+                        <div class="siximg" id="siximg5"></div>
+
+                        <div class="sixtext">
+                            <div class="name_of_place">
+                                <p calss="six_Fname">Amritsar</p>
+                                <p class="six_Lname">,Punjab</p>
+                            </div>
+                            <div class="book_flight">
+                                <div class="sixleft">
+                                    <p>Wed,22 jul</p>
+                                    <div class="money">$ 3,489 onwards
+                                    </div>
+                                </div>
+                                <a class="six_a_decor" href="google.com">Book Flight</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- 7th div  main div   h2,div -->
+
+
+            <div class="sevenbox">
+                <h2 class="sevenheader">Popular Flight Routes</h2>
+                <div class="sevenmain">
+                    <div class="sevenmain_9box_series">
+
+                        <div class="sevenmain_img"></div>
+                        <div class="sevenmain_rightdiv">
+                            <p class="sevenmain_rightdiv_p">Mumbai Flights</p>
+                            <div class="sevenmain_rightdiv_div">
+                                <div class="iskip">To:</div>
+                                <div class="iskidiv">
+                                    <div calss="iskidiv1">Goa .</div>
+                                    <div calss="iskidiv1">Bangaluru .</div>
+                                    <div calss="iskidiv1">Coimba .</div>
+                                    <div calss="iskidiv1">Mumbai</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="eight">
+                <h2 class="eightheader">Popular Domestic Airlines</h2>
+                <div class="eightmain">
+                    <div class="eightmain_div">
+                        <div class="eightmain_div_1">
+                            <div class="eightimg"></div>
+                            <p class="eightp">INDIGO</p>
+                        </div>
+                        <div class="eightmain_div_1">
+                            <div class="eightimg"></div>
+                            <p class="eightp">INDIGO</p>
+                        </div>
+                        <div class="eightmain_div_1">
+                            <div class="eightimg"></div>
+                            <p class="eightp">INDIGO</p>
+                        </div>
+                        <div class="eightmain_div_1">
+                            <div class="eightimg"></div>
+                            <p class="eightp">INDIGO</p>
+                        </div>
+                        <div class="eightmain_div_1">
+                            <div class="eightimg"></div>
+                            <p class="eightp">INDIGO</p>
+                        </div>
+                        <div class="eightmain_div_1">
+                            <div class="eightimg"></div>
+                            <p class="eightp">INDIGO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 9 box -->
+            <div class="nine">
+                <div class="nine_img"></div>
+            </div>
+
+
+            <!-- 10 box -->
+            <div class="ten">
+                <h2 class="ten_contain_h2">About ixigo </h2>
+                <div class="ten_contain_main">
+                    Launched in 2007, ixigo is a technology company focused on empowering Indian travellers to plan,
+                    book and manage
+                    their trips across rail, air, buses and hotels. We assist travellers in making smarter travel
+                    decisions by
+                    leveraging artificial intelligence, machine learning, and data science led innovations on our OTA
+                    platforms,
+                    comprising our websites and mobile applications. Our vision is to become the most customer-centric
+                    travel company,
+                    by offering the best customer experience to our users. Our focus on travel utility and customer
+                    experience for
+                    travellers in the 'next billion user' segment is driven by technology, cost-efficiency and our
+                    culture of innovation
+                    has made us India's leading travel ecosystem for the 'next billion users'.
+                </div>
+                <div class="ten_contain_p">Read More...</div>
+
+            </div>
+
+
+            <!-- 11th box and 2nd last -->
+            <div class="last">
+                <p class="last_p">Important Links</p>
+                <div class="last_div">
+                    <div class="last1">IRCTC Trains</div>
+                    <div class="last1">Tatkal Railway Reservation</div>
+                    <div class="last1">PNR Status</div>
+                    <div class="last1">Train Running Status</div>
+                    <div class="last1">Train Seat Availability</div>
+                    <div class="last1">Platform Locator</div>
+                    <div class="last1">Vande Bharat Express</div>
+                    <div class="last1">IRCTC Cancellation Charges</div>
+                    <div class="last1">Flight Booking</div>
+                      <div class="last1">Tatkal Railway Reservation</div>
+                    <div class="last1">IRCTC Trains</div>
+                    <div class="last1">Tatkal Railway Reservation</div>
+                    <div class="last1">PNR Status</div>
+                    <div class="last1">Train Running Status</div>
+                    <div class="last1">Train Seat Availability</div>
+                    <div class="last1">Platform Locator</div>
+                    <div class="last1">Vande Bharat Express</div>
+                    <div class="last1">IRCTC Cancellation Charges</div>
+                    <div class="last1">Flight Booking</div>
+                </div>
+            </div>
+<div class="last_divbox">
+    <div class="last_divbox_img"></div>
+</div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
