@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_FORM</title>
+    <style>
+
+        .body{
+            height:650px;
+            width: 1400px;
+            display: flex;
+          
+            flex-wrap: wrap;
+        
+            justify-content: center;
+            align-items: center;
+           
+        }
+        .form {
+            height: 600px;
+            width: 800px;
+            background-color: navy;
+            font-size: larger;
+            font-weight: bolder;
+            color: whitesmoke;
+            border: 8px solid black;
+
+
+        }
+    </style>
+</head>
+
+<body  class="body">
+
+    <form class="form">
+        <fieldset>
+            <legend>AUTHENTICATION_FORM</legend>
+            <label for="email_id">Email_Id / ID</label>
+            <input type="text" id="email_id" placeholder="alkaraikbar@gmail.com">
+            </br>
+            </br>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" placeholder="password must be  of 8 char">
+            </br>
+            </br>
+            <label for="choose_one">Designation</label>
+            <select type="text" id="choose_one">
+                <option type="text">Student</option>
+                <option type="text">Faculty</option>
+            </select>
+            </br>
+            </br>
+            <textarea rows="10" cols="50" placeholder="enet any thing !"></textarea>
+            </br>
+            </br>
+            <button>Submit</button>
+        </fieldset>
+
+    </form>
+   
+</body>
+
+</html>
