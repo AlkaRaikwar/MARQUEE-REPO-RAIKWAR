@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mbody {
+            height: 1200px;
+            width: 1300px;
+            display: grid;
+            grid-template-columns: repeat(14, 100px);
+            grid-template-rows: repeat(34, 40px);
+            row-gap: 0.5%;
+
+            background-color: rgba(rgb(122, 122, 124), 0.5);
+            /* border: 14px groove olive; */
+        }
+
+        .Fstbox {
+            /* as it is chaild of mbody */
+            grid-column: 1/14;
+            grid-row: 1/7;
+            /* for its child classes */
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: repeat(4, 70px);
+            grid-column: 1/14;
+            grid-row: 1/14;
+
+        }
+
+        .Fstboxhead {
+
+            /* ye  properties of Fstboxhead as a child of Fstbox hai    */
+            grid-column: 1/14;
+            grid-row: 1/2;
+
+            background-color: lavenderblush;
+            /* and  ye   properties  as a parent  class for Fstbox_ulclass   and Fstbox_left  these 2 its imidiate childs   */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30%;
+        }
+
+        .Fstboxbody {
+            grid-column: 1/14;
+            grid-row: 2/5;
+            background-color: plum;
+            border-radius: 12px;
+            box-shadow: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="mbody">
+            <!-- 1stbox in mbody div -->
+            <div class="Fstbox">
+                <div class="Fstboxhead"> </div>
+                <div class="Fstbox_left">
+                    <h1 class="h1_Fstbox_left">Book International and Domestic Flights</h1>
+                </div>
+            </div>
+            <div class="Fstboxbody"></div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
